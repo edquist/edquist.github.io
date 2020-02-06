@@ -81,6 +81,8 @@ the OSG share the following characteristics:
 <p id="last_update">Last updated: </p>
 </div>
 
+<script src="https://code.jquery.com/jquery-3.4.1.js">
+</script>
 <script>
 (function() {
   $.getJSON("http://web0000.chtc.wisc.edu/osg-cpu-hours.json")
