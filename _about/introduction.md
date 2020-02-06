@@ -85,7 +85,7 @@ the OSG share the following characteristics:
 </script>
 <script>
 (function() {
-  $.getJSON("http://web0000.chtc.wisc.edu/osg-cpu-hours.json")
+  $.getJSON("https://web0000.chtc.wisc.edu/osg-cpu-hours.json")
     .done(function(data) {
       $.each(data.hours_all, function(i, x) {
         $("<td>" + x + "</td>").appendTo("#osg_hours_row");
