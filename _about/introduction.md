@@ -43,7 +43,10 @@ the OSG share the following characteristics:
 <pre> test pretext </pre>
 </div>
 
+<script src="http://code.jquery.com/jquery-1.4.2.min.js">
+</script>
 <script>
-$("<span>" + "some more text" + "</span>").appendTo("#heere");
+var smt = "some more text";
+$("<span>" + smt + "</span>").appendTo("#heere");
 </script>
 
