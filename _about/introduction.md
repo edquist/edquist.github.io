@@ -47,7 +47,7 @@ the OSG share the following characteristics:
 
 <div>
 <h2>OSG CPU Hours for CC*</h2>
-<table border=1>
+<table>
 <tr>
 <th></th>
 <th>Last 30 Days</th>
@@ -63,7 +63,7 @@ the OSG share the following characteristics:
 </table>
 <br/><br/>
 <h2>OSG GPU Hours for CC*</h2>
-<table border=1>
+<table>
 <tr>
 <th></th>
 <th>Last 30 Days</th>
