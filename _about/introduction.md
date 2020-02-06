@@ -43,10 +43,61 @@ the OSG share the following characteristics:
 <pre> test pretext </pre>
 </div>
 
-<script src="http://code.jquery.com/jquery-1.4.2.min.js">
-</script>
+<hr/>
+
+<h2>OSG CPU Hours for CC*</h2>
+<table border=1>
+<tr>
+<th></th>
+<th>Last 30 Days</th>
+<th>Last 90 Days</th>
+<th>Last 365 Days</th>
+</tr>
+<tr id="osg_hours_row">
+<th>CPU Hours</th>
+</tr>
+<tr id="fqdn_count_row">
+<th>CEs Reporting</th>
+</tr>
+</table>
+<br/><br/>
+<h2>OSG GPU Hours for CC*</h2>
+<table border=1>
+<tr>
+<th></th>
+<th>Last 30 Days</th>
+<th>Last 90 Days</th>
+<th>Last 365 Days</th>
+</tr>
+<tr id="osg_hours_gpus_row">
+<th>GPU Hours</th>
+</tr>
+<tr id="fqdn_count_gpus_row">
+<th>CEs Reporting</th>
+</tr>
+</table>
+<br/><br/>
+<p id="last_update">Last updated: </p>
+
 <script>
-var smt = "some more text";
-$("<span>" + smt + "</span>").appendTo("#heere");
+(function() {
+  $.getJSON("http://web0000.chtc.wisc.edu/osg-cpu-hours.json")
+    .done(function(data) {
+      $.each(data.hours_all, function(i, x) {
+        $("<td>" + x + "</td>").appendTo("#osg_hours_row");
+      });
+      $.each(data.fqdn_counts_all, function(i, x) {
+        $("<td>" + x + "</td>").appendTo("#fqdn_count_row");
+      });
+      // GPU jobs
+      $.each(data.hours_gpu, function(i, x) {
+        $("<td>" + x + "</td>").appendTo("#osg_hours_gpus_row");
+      });
+      $.each(data.fqdn_counts_gpu, function(i, x) {
+        $("<td>" + x + "</td>").appendTo("#fqdn_count_gpus_row");
+      });
+      $("<span>" + data.last_update + "</span>").appendTo("#last_update");
+    });
+})();
 </script>
 
