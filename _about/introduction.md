@@ -45,6 +45,7 @@ the OSG share the following characteristics:
 
 <hr/>
 
+<div>
 <h2>OSG CPU Hours for CC*</h2>
 <table border=1>
 <tr>
@@ -78,6 +79,7 @@ the OSG share the following characteristics:
 </table>
 <br/><br/>
 <p id="last_update">Last updated: </p>
+</div>
 
 <script>
 (function() {
