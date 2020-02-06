@@ -39,6 +39,11 @@ the OSG share the following characteristics:
 <div>
 <h2> test heading </h2>
 <p> test text </p>
+<p id="heere">Hello: </p>
 <pre> test pretext </pre>
 </div>
+
+<script>
+$("<span>" + "some more text" + "</span>").appendTo("#heere");
+</script>
 
