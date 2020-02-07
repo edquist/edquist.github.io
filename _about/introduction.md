@@ -70,8 +70,6 @@ the OSG share the following characteristics:
 </table>
 </div>
 
-<script src="https://code.jquery.com/jquery-3.4.1.js">
-</script>
 <script>
 (function() {
   $.getJSON("https://web0000.chtc.wisc.edu/osg-cpu-hours.json")
