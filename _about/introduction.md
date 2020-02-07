@@ -103,5 +103,21 @@ the OSG share the following characteristics:
       $("<span>" + data.last_update + "</span>").appendTo("#last_update");
     });
 })();
+$.ajax({
+    url: "https://web0000.chtc.wisc.edu/osg-cpu-hours.json",
+
+    // The name of the callback parameter, as specified by the YQL service
+    jsonp: "callback",
+
+    // Tell jQuery we're expecting JSONP
+    dataType: "jsonp",
+
+    data: {},
+
+    // Work with the response
+    success: function( response ) {
+        console.log( response ); // server response
+    }
+});
 </script>
 
