@@ -37,15 +37,6 @@ the OSG share the following characteristics:
 <hr/>
 
 <div>
-<h2> test heading </h2>
-<p> test text </p>
-<p id="heere">Hello: </p>
-<pre> test pretext </pre>
-</div>
-
-<hr/>
-
-<div>
 <h2>OSG CPU Hours for CC*</h2>
 <table>
 <tr>
