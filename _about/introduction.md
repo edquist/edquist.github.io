@@ -68,8 +68,6 @@ the OSG share the following characteristics:
 <th>CEs Reporting</th>
 </tr>
 </table>
-<br/><br/>
-<p id="last_update">Last updated: </p>
 </div>
 
 <script src="https://code.jquery.com/jquery-3.4.1.js">
@@ -91,7 +89,6 @@ the OSG share the following characteristics:
       $.each(data.fqdn_counts_gpu, function(i, x) {
         $("<td>" + x + "</td>").appendTo("#fqdn_count_gpus_row");
       });
-      $("<span>" + data.last_update + "</span>").appendTo("#last_update");
     });
 })();
 </script>
