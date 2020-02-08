@@ -68,10 +68,10 @@ the OSG share the following characteristics:
   $.getJSON("https://web0000.chtc.wisc.edu/osg-cpu-hours.json")
     .done(function(data) {
       $.each(data.all_non_lhc, function(i, x) {
-        $("<td>" + x + "</td>").appendTo("#all_non_lhc_row");
+        $("<td style='text-align:right'>" + x + "</td>").appendTo("#all_non_lhc_row");
       });
       $.each(data.gpu_usage, function(i, x) {
-        $("<td>" + x + "</td>").appendTo("#gpu_usage_row");
+        $("<td style='text-align:right'>" + x + "</td>").appendTo("#gpu_usage_row");
       });
     });
 })();
