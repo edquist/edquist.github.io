@@ -34,7 +34,9 @@ the OSG share the following characteristics:
 - Please see the [system administrator docs](https://opensciencegrid.org/docs/) for more information regarding the OSG.
 - [Grid Accounting portal](https://gracc.opensciencegrid.org/)
 
+<br/><br/>
 <hr/>
+<br/><br/>
 
 <div>
 
