@@ -34,15 +34,14 @@ the OSG share the following characteristics:
 - Please see the [system administrator docs](https://opensciencegrid.org/docs/) for more information regarding the OSG.
 - [Grid Accounting portal](https://gracc.opensciencegrid.org/)
 
-<br/><br/>
+<br/>
 <hr/>
-<br/><br/>
+<br/>
 
 <div>
 
 <h2>OSG CPU Hours</h2>
-<h3>All Science except LHC Experiments</h3>
-<table>
+<table style="background-color: #f8f9fa;">
 
 <tr>
   <th></th>
@@ -60,6 +59,9 @@ the OSG share the following characteristics:
 </tr>
 
 </table>
+<p style="font-weight: bold; font-style: italic; text-align: center; margin-top: 1em">
+All Science except LHC Experiments
+</p>
 
 </div>
 
