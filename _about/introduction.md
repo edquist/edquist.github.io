@@ -41,7 +41,7 @@ the OSG share the following characteristics:
 <div>
 
 <h2>OSG CPU Hours</h2>
-<table style="background-color: #f8f9fa;">
+<table>
 
 <tr>
   <th></th>
