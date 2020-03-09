@@ -72,7 +72,7 @@ if it wasn't for the OSG. Sharing allows individual researchers to access larger
 <div>
 
 <style>
-.osg_hours td,th { text-align: right }
+.osg_hours td,th.ar { text-align: right }
 .osg_table_footer {
     font-weight: bold;
     font-style: italic;
@@ -85,10 +85,10 @@ if it wasn't for the OSG. Sharing allows individual researchers to access larger
 <table class="osg_hours">
 
 <tr>
-  <th></th>
-  <th>Last 24 Hours</th>
-  <th>Last 30 Days</th>
-  <th>Last 12 Months</th>
+  <th class="ar">></th>
+  <th class="ar">>Last 24 Hours</th>
+  <th class="ar">>Last 30 Days</th>
+  <th class="ar">>Last 12 Months</th>
 </tr>
 
 <tr id="all_non_lhc_row">
