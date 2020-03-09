@@ -71,8 +71,18 @@ if it wasn't for the OSG. Sharing allows individual researchers to access larger
 
 <div>
 
+<style>
+.osg_hours td,th { text-align: right }
+.osg_table_footer {
+    font-weight: bold;
+    font-style: italic;
+    text-align: center;
+    margin-top: 1em
+}
+</style>
+
 <h2>OSG CPU Hours</h2>
-<table>
+<table class="osg_hours">
 
 <tr>
   <th></th>
@@ -90,7 +100,7 @@ if it wasn't for the OSG. Sharing allows individual researchers to access larger
 </tr>
 
 </table>
-<p style="font-weight: bold; font-style: italic; text-align: center; margin-top: 1em">
+<p class="osg_table_footer">
 All Science except LHC Experiments
 </p>
 
@@ -101,10 +111,10 @@ All Science except LHC Experiments
   $.getJSON("https://web0000.chtc.wisc.edu/osg-cpu-hours.json")
     .done(function(data) {
       $.each(data.all_non_lhc, function(i, x) {
-        $('<td align="right">' + x + "</td>").appendTo("#all_non_lhc_row");
+        $('<td>' + x + "</td>").appendTo("#all_non_lhc_row");
       });
       $.each(data.gpu_usage, function(i, x) {
-        $('<td align="right">' + x + "</td>").appendTo("#gpu_usage_row");
+        $('<td>' + x + "</td>").appendTo("#gpu_usage_row");
       });
     });
 })();
