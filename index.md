@@ -77,14 +77,14 @@ if it wasn't for the OSG. Sharing allows individual researchers to access larger
     text-align: center;
     margin-top: 1em
 }
-.r75 {
-    float: right;
+.c75 {
+    margin: auto;
     max-width: 75%
 }
 </style>
 
 <div>
-<div class="r75">
+<div class="c75">
 
 <h2>OSG CPU Hours</h2>
 <table class="osg_hours">
