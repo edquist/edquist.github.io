@@ -69,8 +69,6 @@ if it wasn't for the OSG. Sharing allows individual researchers to access larger
 <hr/>
 <br/>
 
-<div>
-
 <style>
 .osg_hours td,th.ar { text-align: right }
 .osg_table_footer {
@@ -79,7 +77,14 @@ if it wasn't for the OSG. Sharing allows individual researchers to access larger
     text-align: center;
     margin-top: 1em
 }
+.r75 {
+    float: right;
+    max-width: 75%
+}
 </style>
+
+<div>
+<div class="r75">
 
 <h2>OSG CPU Hours</h2>
 <table class="osg_hours">
@@ -104,6 +109,7 @@ if it wasn't for the OSG. Sharing allows individual researchers to access larger
 All Science except LHC Experiments
 </p>
 
+</div>
 </div>
 
 <script>
