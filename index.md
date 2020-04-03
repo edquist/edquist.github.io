@@ -96,6 +96,10 @@ if it wasn't for the OSG. Sharing allows individual researchers to access larger
   <th class="ar">Last 12 Months</th>
 </tr>
 
+<tr id="amnh_usage_row">
+  <th>AMNH</th>
+</tr>
+
 <tr id="all_non_lhc_row">
   <th>All Science, excluding LHC</th>
 </tr>
@@ -117,6 +121,9 @@ All Science except LHC Experiments
 (function() {
   $.getJSON("https://web0000.chtc.wisc.edu/osg-cpu-hours.json")
     .done(function(data) {
+      $.each(data.amnh_usage, function(i, x) {
+        $('<td>' + x + "</td>").appendTo("#amnh_usage_row");
+      });
       $.each(data.all_non_lhc, function(i, x) {
         $('<td>' + x + "</td>").appendTo("#all_non_lhc_row");
       });
