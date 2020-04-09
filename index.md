@@ -101,6 +101,10 @@ if it wasn't for the OSG. Sharing allows individual researchers to access larger
   <th>AMNH</th>
 </tr>
 
+<tr id="cc_star_usage_row">
+  <th>CC\*</th>
+</tr>
+
 <tr id="all_non_lhc_row">
   <th>All Science, excluding LHC</th>
 </tr>
@@ -124,6 +128,9 @@ All Science except LHC Experiments
     .done(function(data) {
       $.each(data.amnh_usage, function(i, x) {
         $('<td>' + x + "</td>").appendTo("#amnh_usage_row");
+      });
+      $.each(data.cc_star_usage, function(i, x) {
+        $('<td>' + x + "</td>").appendTo("#cc_star_usage_row");
       });
       $.each(data.all_non_lhc, function(i, x) {
         $('<td>' + x + "</td>").appendTo("#all_non_lhc_row");
