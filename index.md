@@ -78,6 +78,10 @@ if it wasn't for the OSG. Sharing allows individual researchers to access larger
     margin: auto;
     max-width: 75%
 }
+.h2ts {
+    float: right;
+    font-size: small;
+}
 </style>
 
 <div>
@@ -127,7 +131,7 @@ All Science except LHC Experiments
       $.each(data.gpu_usage, function(i, x) {
         $('<td>' + x + "</td>").appendTo("#gpu_usage_row");
       });
-      $('<span> as of ' + data.last_update_str + "</span>").appendTo("#osg_cpu_hours_h2");
+      $('<span class="h2ts"> as of ' + data.last_update_str + "</span>").appendTo("#osg_cpu_hours_h2");
     });
 })();
 </script>
