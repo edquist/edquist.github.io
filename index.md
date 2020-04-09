@@ -83,7 +83,7 @@ if it wasn't for the OSG. Sharing allows individual researchers to access larger
 <div>
 <div class="c75">
 
-<h2>OSG CPU Hours</h2>
+<h2 id="osg_cpu_hours_h2">OSG CPU Hours</h2>
 <table class="osg_hours">
 
 <tr>
@@ -127,6 +127,7 @@ All Science except LHC Experiments
       $.each(data.gpu_usage, function(i, x) {
         $('<td>' + x + "</td>").appendTo("#gpu_usage_row");
       });
+      $('as of ' + data.last_update_str).appendTo("#osg_cpu_hours_h2");
     });
 })();
 </script>
