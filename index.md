@@ -102,7 +102,7 @@ if it wasn't for the OSG. Sharing allows individual researchers to access larger
 </tr>
 
 <tr id="cc_star_usage_row">
-  <th>CC\*</th>
+  <th>CC&#42;</th>
 </tr>
 
 <tr id="all_non_lhc_row">
