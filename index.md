@@ -127,7 +127,7 @@ All Science except LHC Experiments
       $.each(data.gpu_usage, function(i, x) {
         $('<td>' + x + "</td>").appendTo("#gpu_usage_row");
       });
-      $('as of ' + data.last_update_str).appendTo("#osg_cpu_hours_h2");
+      $('<span> as of ' + data.last_update_str + "</span>").appendTo("#osg_cpu_hours_h2");
     });
 })();
 </script>
