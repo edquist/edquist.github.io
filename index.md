@@ -102,7 +102,7 @@ if it wasn't for the OSG. Sharing allows individual researchers to access larger
 </tr>
 
 <tr id="cc_star_count_row">
-  <th>All CC&#42; # CEs Reporting</th>
+  <th># CEs Reporting</th>
 </tr>
 
 <tr id="amnh_usage_row">
@@ -110,7 +110,7 @@ if it wasn't for the OSG. Sharing allows individual researchers to access larger
 </tr>
 
 <tr id="amnh_count_row">
-  <th>AMNH CC&#42; # CEs Reporting</th>
+  <th># CEs Reporting</th>
 </tr>
 
 <tr id="all_non_lhc_row">
