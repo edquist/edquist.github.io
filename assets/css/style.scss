@@ -79,6 +79,24 @@ th, td {
   margin-bottom: 0;
 }
 
+#covid-19-mini-banner {
+  padding: 1px;
+  background-color: #FF6600;
+  margin-bottom: 2rem;
+}
+
+#covid-19-mini-banner p {
+  text-align: center;
+  font-size: 125%;
+  font-weight: bold;
+  color: white;
+}
+
+#covid-19-mini-banner a {
+  color: white;
+  text-decoration: underline;
+}
+
 .title-head {
   margin-bottom: 1em;
 }
