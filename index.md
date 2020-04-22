@@ -97,12 +97,12 @@ if it wasn't for the OSG. Sharing allows individual researchers to access larger
   <th class="ar">Last 12 Months</th>
 </tr>
 
-<tr id="amnh_usage_row">
-  <th>AMNH</th>
+<tr id="cc_star_usage_row">
+  <th>All CC&#42;</th>
 </tr>
 
-<tr id="cc_star_usage_row">
-  <th>CC&#42;</th>
+<tr id="amnh_usage_row">
+  <th>AMNH CC&#42;</th>
 </tr>
 
 <tr id="all_non_lhc_row">
