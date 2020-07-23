@@ -121,6 +121,10 @@ if it wasn't for the OSG. Sharing allows individual researchers to access larger
   <th>GPU Utilization</th>
 </tr>
 
+<tr id="cc_star_gpu_row">
+  <th>CC&#42; GPU Utilization</th>
+</tr>
+
 </table>
 <p class="osg_table_footer">
 All Science except LHC Experiments
@@ -151,6 +155,9 @@ All Science except LHC Experiments
       });
       $.each(data.gpu_usage, function(i, x) {
         $('<td>' + x + "</td>").appendTo("#gpu_usage_row");
+      });
+      $.each(data.cc_star_gpu, function(i, x) {
+        $('<td>' + x + "</td>").appendTo("#cc_star_gpu_row");
       });
       $('<span class="h2ts"> as of ' + data.last_update_str + "</span>").appendTo("#osg_cpu_hours_h2");
     });
