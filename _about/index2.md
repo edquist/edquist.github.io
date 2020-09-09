@@ -93,6 +93,7 @@ if it wasn't for the OSG. Sharing allows individual researchers to access larger
   background-color: #555;
   color: #fff;
   text-align: center;
+  font-size: small;
   border-radius: 6px;
   padding: 5px 0;
   position: absolute;
