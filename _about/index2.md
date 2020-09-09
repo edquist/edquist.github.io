@@ -2,8 +2,6 @@
 layout: default
 ---
 
-{% include homepage_top.html %}
-
 ## The Open Science Grid
 
 <br/>
