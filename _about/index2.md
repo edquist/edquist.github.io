@@ -89,7 +89,7 @@ if it wasn't for the OSG. Sharing allows individual researchers to access larger
 
 .xtooltip .xtooltiptext {
   visibility: hidden;
-  width: 120px;
+  width: 110%;
   background-color: #555;
   color: #fff;
   text-align: center;
