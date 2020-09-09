@@ -82,6 +82,44 @@ if it wasn't for the OSG. Sharing allows individual researchers to access larger
     float: right;
     font-size: small;
 }
+
+.xtooltip {
+  position: relative;
+}
+
+.xtooltip .xtooltiptext {
+  visibility: hidden;
+  width: 110%;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  font-size: small;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -60px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.xtooltip .xtooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+.xtooltip:hover .xtooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
 </style>
 
 <div>
@@ -146,13 +184,21 @@ All Science except LHC Experiments
         $('<td>' + x + "</td>").appendTo("#amnh_usage_row");
       });
       $.each(data.amnh_count, function(i, x) {
-        $('<td>' + x + "</td>").appendTo("#amnh_count_row");
+        $('<td class="xtooltip">' + x
+          +   '<span class="xtooltiptext">'
+          +     data.amnh_resources[i].join("<br/>")
+          +   '</span>'
+          + "</td>").appendTo("#amnh_count_row");
       });
       $.each(data.cc_star_usage, function(i, x) {
         $('<td>' + x + "</td>").appendTo("#cc_star_usage_row");
       });
       $.each(data.cc_star_count, function(i, x) {
-        $('<td>' + x + "</td>").appendTo("#cc_star_count_row");
+        $('<td class="xtooltip">' + x
+          +   '<span class="xtooltiptext">'
+          +     data.cc_star_resources[i].join("<br/>")
+          +   '</span>'
+          + "</td>").appendTo("#cc_star_count_row");
       });
       $.each(data.all_non_lhc, function(i, x) {
         $('<td>' + x + "</td>").appendTo("#all_non_lhc_row");
@@ -164,7 +210,11 @@ All Science except LHC Experiments
         $('<td>' + x + "</td>").appendTo("#cc_star_gpu_usage_row");
       });
       $.each(data.cc_star_gpu_count, function(i, x) {
-        $('<td>' + x + "</td>").appendTo("#cc_star_gpu_count_row");
+        $('<td class="xtooltip">' + x
+          +   '<span class="xtooltiptext">'
+          +     data.cc_star_gpu_resources[i].join("<br/>")
+          +   '</span>'
+          + "</td>").appendTo("#cc_star_gpu_count_row");
       });
       $('<span class="h2ts"> as of ' + data.last_update_str + "</span>").appendTo("#osg_cpu_hours_h2");
     });
