@@ -4,6 +4,17 @@ layout: default
 
 {% include homepage_top.html %}
 
+<div id="ahm-banner">
+  <h2>OSG All-Hands Meeting: Aug. 31 to Sep. 4 &mdash; all virtual for 2020!</h2>
+  <p>
+    Quick links:
+    <a href="https://opensciencegrid.org/all-hands/2020/">Home page</a> &middot;
+    <a href="https://indico.fnal.gov/event/22127/">Conf. site</a> &middot;
+    <a href="https://indico.fnal.gov/event/22127/registrations/">Registration</a> (req&rsquo;d) &middot;
+    <a href="https://indico.fnal.gov/event/22127/timetable/">Schedule</a>
+  </p>
+</div>
+
 ## The Open Science Grid
 
 A national, distributed computing partnership for data-intensive research
@@ -12,7 +23,7 @@ A national, distributed computing partnership for data-intensive research
   <p class="special-banner-1"><strong>Extra OSG Support for COVID-19 Research</strong></p>
   <p class="special-banner-1" style="margin-bottom: 0.5ex;">
     We are here to help you with your COVID-19 research! Please contact us at
-    <a href="mailto:help@opensciencegrid.org">help@opensciencegrid.org</a> if
+    <a href="mailto:support@opensciencegrid.org">support@opensciencegrid.org</a> if
     you or your organization:
   </p>
   <ul>
@@ -55,9 +66,9 @@ if it wasn't for the OSG. Sharing allows individual researchers to access larger
   </div>
   <div class="col-lg-4">
     <h3>Find Us!</h3>
-    <p>Are you a user wanting more computing resources?</p>
-    <p>Are you a resource provider wanting to join our collaboration?</p>
-    <p>If so, find us at the <a href="https://support.opensciencegrid.org">support desk</a>.</p>
+    <p>Are you a resource provider wanting to join our collaboration? Contact us: <a href="mailto:support@opensciencegrid.org">support@opensciencegrid.org</a>.</p>
+    <p>Are you a user wanting more computing resources? Check with your 'local' computing providers, or consider using <a href="https://www.osgconnect.net/">OSG Connect</a> (available to US-based academic/govt/non-profit research projects).</p>
+    <p>For any other inquiries, reach us at: <a href="mailto:support@opensciencegrid.org">support@opensciencegrid.org</a>.</p>
     <p>To see the breadth of the OSG use, <a href="https://gracc.opensciencegrid.org">explore our accounting portal</a>.</p>
   </div>
 </div>
