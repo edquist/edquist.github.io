@@ -33,7 +33,7 @@ layout: default
   visibility: hidden;
   background-color: #555;
   color: #fff;
-  text-align: center;
+  text-align: left;
   white-space: nowrap;
   font-size: small;
   border-radius: 6px;
