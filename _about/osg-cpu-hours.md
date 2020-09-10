@@ -128,7 +128,7 @@ All Science except LHC Experiments
       $.each(data.amnh_count, function(i, x) {
         $('<td class="xtooltip">' + x
           +   '<span class="xtooltiptext">'
-          +     data.amnh_fqdn[i].join("<br/>")
+          +     data.amnh_fqdns[i].join("<br/>")
           +   '</span>'
           + "</td>").appendTo("#amnh_count_row");
       });
@@ -138,7 +138,7 @@ All Science except LHC Experiments
       $.each(data.cc_star_count, function(i, x) {
         $('<td class="xtooltip">' + x
           +   '<span class="xtooltiptext">'
-          +     data.cc_star_fqdn[i].join("<br/>")
+          +     data.cc_star_fqdns[i].join("<br/>")
           +   '</span>'
           + "</td>").appendTo("#cc_star_count_row");
       });
@@ -154,7 +154,7 @@ All Science except LHC Experiments
       $.each(data.cc_star_gpu_count, function(i, x) {
         $('<td class="xtooltip">' + x
           +   '<span class="xtooltiptext">'
-          +     data.cc_star_gpu_fqdn[i].join("<br/>")
+          +     data.cc_star_gpu_fqdns[i].join("<br/>")
           +   '</span>'
           + "</td>").appendTo("#cc_star_gpu_count_row");
       });
