@@ -100,13 +100,13 @@ if it wasn't for the OSG. Sharing allows individual researchers to access larger
 
 .xtooltip .xtooltiptext {
   visibility: hidden;
-  width: 110%;
   background-color: #555;
   color: #fff;
-  text-align: center;
+  text-align: left;
+  white-space: nowrap;
   font-size: small;
   border-radius: 6px;
-  padding: 5px 0;
+  padding: 5px 5px;
   position: absolute;
   z-index: 1;
   bottom: 125%;
@@ -197,7 +197,7 @@ All Science except LHC Experiments
       $.each(data.amnh_count, function(i, x) {
         $('<td class="xtooltip">' + x
           +   '<span class="xtooltiptext">'
-          +     data.amnh_resources[i].join("<br/>")
+          +     data.amnh_fqdn_resources[i].join("<br/>")
           +   '</span>'
           + "</td>").appendTo("#amnh_count_row");
       });
@@ -207,7 +207,7 @@ All Science except LHC Experiments
       $.each(data.cc_star_count, function(i, x) {
         $('<td class="xtooltip">' + x
           +   '<span class="xtooltiptext">'
-          +     data.cc_star_resources[i].join("<br/>")
+          +     data.cc_star_fqdn_resources[i].join("<br/>")
           +   '</span>'
           + "</td>").appendTo("#cc_star_count_row");
       });
@@ -223,7 +223,7 @@ All Science except LHC Experiments
       $.each(data.cc_star_gpu_count, function(i, x) {
         $('<td class="xtooltip">' + x
           +   '<span class="xtooltiptext">'
-          +     data.cc_star_gpu_resources[i].join("<br/>")
+          +     data.cc_star_gpu_fqdn_resources[i].join("<br/>")
           +   '</span>'
           + "</td>").appendTo("#cc_star_gpu_count_row");
       });
