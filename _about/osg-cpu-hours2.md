@@ -109,7 +109,7 @@ All Science except LHC Experiments
 
 <script>
 (function() {
-  $.getJSON("https://web0000.chtc.wisc.edu/osg-cpu-hours.json")
+  $.getJSON("https://path-cc.io/metrics/osg-cpu-hours.json")
     .done(function(data) {
       $.each(data.amnh_usage, function(i, x) {
         $('<td>' + x + "</td>").appendTo("#amnh_usage_row");
